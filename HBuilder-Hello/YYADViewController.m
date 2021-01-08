@@ -36,9 +36,16 @@
 }
 
 - (void)setup {
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    for (int i = 1; i < 20; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"900X1600 %d",i]];
+      
+        [arr addObject:image];
+    }
     self.countDownView.layer.cornerRadius = self.countDownView.frame.size.height / 2;
-        self.countDownView.hidden = YES;
-         self.countDownNum = 3;
+//        self.countDownView.hidden = YES;
+         self.countDownNum = 5;
             NSInteger imgCount = 1;
             [self.myScroll setPagingEnabled:YES];
                 self.myScroll.showsVerticalScrollIndicator =NO;
@@ -53,7 +60,12 @@
                     imageV.clipsToBounds = YES;
                     
                     imageV.backgroundColor = [UIColor whiteColor];
-                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%d.jpg",i]];
+//                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%d.jpg",i]];
+//                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"prepare"]];
+                    
+                    imageV.animationDuration = 1.3;
+                    [imageV setAnimationImages:arr];
+                    [imageV startAnimating];
         //            if (i==imgCount) {
         //                [imageV setUserInteractionEnabled:YES];
         //                UIButton *btn=[UIButton buttonWithType:0];
@@ -119,11 +131,13 @@
     
     
 //    [self performSelector:@selector(countDown) withObject:nil afterDelay:0.5];
-        self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
-//    self.timer = [[NSTimer alloc]initWithFireDate:[NSDate distantPast] interval:1 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-    [[NSRunLoop currentRunLoop] runMode:NSRunLoopCommonModes beforeDate:[NSDate distantFuture]];
-    [self.timer fire];
+    
+//        self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
+
+//        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+//    [[NSRunLoop currentRunLoop] runMode:NSRunLoopCommonModes beforeDate:[NSDate distantFuture]];
+//    [self.timer fire];
+    
     //    [[NSRunLoop mainRunLoop] run];
 //        [self countDown];
     
@@ -161,7 +175,7 @@
 {
     _userTouch = YES;
     AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
-    [app setRootViewController];//切换跟视图
+    [app pushHomeViewController];//切换跟视图
 }
 
 -(void)tapAction:(UITapGestureRecognizer *)sender

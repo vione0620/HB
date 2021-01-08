@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,16 +23,29 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-R6-N54">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </scrollView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prepare" translatesAutoresizingMaskIntoConstraints="NO" id="aPK-db-7bf" customClass="prepare">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="s7t-R6-N54" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1yt-1z-Qe7"/>
+                <constraint firstItem="aPK-db-7bf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dlv-D1-O2v"/>
                 <constraint firstAttribute="bottom" secondItem="s7t-R6-N54" secondAttribute="bottom" id="GOG-Wq-AS1"/>
+                <constraint firstAttribute="trailing" secondItem="aPK-db-7bf" secondAttribute="trailing" id="eHU-w3-CFN"/>
                 <constraint firstItem="s7t-R6-N54" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="etT-6y-mdh"/>
+                <constraint firstItem="aPK-db-7bf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hk7-VX-5Ld"/>
                 <constraint firstAttribute="trailing" secondItem="s7t-R6-N54" secondAttribute="trailing" id="jvA-Ev-Z7J"/>
+                <constraint firstAttribute="bottom" secondItem="aPK-db-7bf" secondAttribute="bottom" id="uZJ-4b-nsD"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="139" y="125"/>
         </view>
     </objects>
+    <resources>
+        <image name="prepare" width="900" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

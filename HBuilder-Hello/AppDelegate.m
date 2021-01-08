@@ -14,7 +14,7 @@
 #import "PDRCoreAppManager.h"
 #import "YYADViewController.h"
 #import "GuideViewController.h"
-
+#import <CADisplay/CADisplay.h>
 #define ENABLEAD
 
 #if defined(ENABLEAD)
@@ -91,18 +91,65 @@
                 self.h5ViewContoller.showLoadingView = NO;
             }
     });
+    [CABaseConfig waiting:1];
+//    self.window.rootViewController = navigationController;
+
+//    [self performSelector:@selector(pre) withObject:nil afterDelay:3];
+//    GuideViewController *guide = [[GuideViewController alloc]init];
+    YYADViewController *guide = [[YYADViewController alloc]init];
+    self.window.rootViewController=guide;
     
-    
-    self.window.rootViewController = navigationController;
+//    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 //    [self pushHomeViewController];
     return ret;
 }
 
+
+- (void)checkUpdateVersion {
+
+    kWeakSelf(self)
+    [CABaseConfig ca_newForChinaCurrentVersion:@"1527720616" block:^(NSString * _Nonnull version, BOOL hasNew) {
+        if (hasNew) {
+            [weakself showUpdateVersion];
+        }
+
+    }];
+}
+- (void)showUpdateVersion {
+    NSString *message = @"新版本上线啦";
+//    if ([AccountManager sharedInstance].needsUpdate == YES) {
+//        message = @"新版本上线啦\n需要更新才能使用新功能";
+//    }
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"更新" message:message preferredStyle:UIAlertControllerStyleAlert];
+//    if ([AccountManager sharedInstance].needsUpdate == NO) {
+//
+//
+//    }
+    [alert addAction:[UIAlertAction actionWithTitle:@"暂不更新" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"立即更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%d", 1527720616]];
+        BOOL isCanOpen = [[UIApplication sharedApplication] canOpenURL:url];
+        if (isCanOpen) {
+            if (@available(iOS 10.0, *)) {
+                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+                    
+                }];
+            } else {
+                [[UIApplication sharedApplication] openURL:url];
+            }
+        }
+        
+    }]];
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+}
 -(void)pushHomeViewController {
    
     self.window.rootViewController = self.rootViewController;
-            
+    [self checkUpdateVersion];
+    
 }
 
 //- (void)setADVC {

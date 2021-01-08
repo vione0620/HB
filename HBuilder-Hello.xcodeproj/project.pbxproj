@@ -24,9 +24,17 @@
 		182B663924E535FB00CCA1D0 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B663824E535FB00CCA1D0 /* AMapLocationKit.framework */; };
 		182B663A24E5361000CCA1D0 /* liblibGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AB0B9621EF10E60029B229 /* liblibGeolocation.a */; };
 		18325BA724E6920A0072901C /* File in Resources */ = {isa = PBXBuildFile; fileRef = 18325BA624E6920A0072901C /* File */; };
-		1832908F250B17BE00FA14EA /* BIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832908E250B17BE00FA14EA /* BIcon.png */; };
+		1841BA1D255418E80089EF5F /* direct_order.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1841BA1C255418E80089EF5F /* direct_order.wav */; };
+		1843B6482583174F000F68D1 /* CADisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B6472583174F000F68D1 /* CADisplay.framework */; };
+		1843B64A25848D77000F68D1 /* BusiIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1843B64925848D77000F68D1 /* BusiIcon.png */; };
 		184465A02552C29000C9CA88 /* liblibOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD81D1CB50C4000C0F062 /* liblibOauth.a */; };
 		184465A12552C2BD00C9CA88 /* libWXOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83E1CB50C4000C0F062 /* libWXOauth.a */; };
+		1845A6A6259C7C2F007989F9 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A5259C7C2F007989F9 /* AMap.bundle */; };
+		1845A6A8259C902E007989F9 /* user_order.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A7259C902E007989F9 /* user_order.wav */; };
+		1887671E2595D6050060C124 /* BBB.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671D2595D6050060C124 /* BBB.png */; };
+		188767202595E6380060C124 /* BBC@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671F2595E6380060C124 /* BBC@3x.png */; };
+		188767222595E7800060C124 /* BBS.png in Resources */ = {isa = PBXBuildFile; fileRef = 188767212595E7800060C124 /* BBS.png */; };
+		188767242595EDBD0060C124 /* BBN.png in Resources */ = {isa = PBXBuildFile; fileRef = 188767232595EDBD0060C124 /* BBN.png */; };
 		18D527F524F65A2600964739 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D527F324F65A2600964739 /* GuideViewController.m */; };
 		18D527F624F65A2600964739 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D527F424F65A2600964739 /* GuideViewController.xib */; };
 		18D527FA24F65A4B00964739 /* YYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D527F824F65A4B00964739 /* YYADViewController.m */; };
@@ -146,7 +154,15 @@
 		182B663524E535B700CCA1D0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		182B663824E535FB00CCA1D0 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = ../SDK/Libs/AMapLocationKit.framework; sourceTree = "<group>"; };
 		18325BA624E6920A0072901C /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
-		1832908E250B17BE00FA14EA /* BIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BIcon.png; sourceTree = "<group>"; };
+		1841BA1C255418E80089EF5F /* direct_order.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = direct_order.wav; sourceTree = "<group>"; };
+		1843B6472583174F000F68D1 /* CADisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CADisplay.framework; sourceTree = "<group>"; };
+		1843B64925848D77000F68D1 /* BusiIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BusiIcon.png; sourceTree = "<group>"; };
+		1845A6A5259C7C2F007989F9 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		1845A6A7259C902E007989F9 /* user_order.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = user_order.wav; sourceTree = "<group>"; };
+		1887671D2595D6050060C124 /* BBB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBB.png; sourceTree = "<group>"; };
+		1887671F2595E6380060C124 /* BBC@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BBC@3x.png"; sourceTree = "<group>"; };
+		188767212595E7800060C124 /* BBS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBS.png; sourceTree = "<group>"; };
+		188767232595EDBD0060C124 /* BBN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBN.png; sourceTree = "<group>"; };
 		18D527F224F65A2600964739 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		18D527F324F65A2600964739 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		18D527F424F65A2600964739 /* GuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
@@ -514,6 +530,7 @@
 				182B663424E535AE00CCA1D0 /* ExternalAccessory.framework in Frameworks */,
 				182B663224E5358C00CCA1D0 /* libAMapLocationPlugin.a in Frameworks */,
 				24BD5AF61C994BB200B05AA2 /* libc++.tbd in Frameworks */,
+				1843B6482583174F000F68D1 /* CADisplay.framework in Frameworks */,
 				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
 				242725CD1D26686700EBD79E /* CoreMotion.framework in Frameworks */,
 				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
@@ -600,6 +617,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1841BA1B2554189D0089EF5F /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				1845A6A7259C902E007989F9 /* user_order.wav */,
+				1841BA1C255418E80089EF5F /* direct_order.wav */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		1843B646258316D8000F68D1 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1843B6472583174F000F68D1 /* CADisplay.framework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		1845A6A4259C7C12007989F9 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				1845A6A5259C7C2F007989F9 /* AMap.bundle */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
 		4F4C64522465600B006A13AA /* inc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1039,6 +1081,9 @@
 		8EED62A1198A1D13000A4449 /* HBuilder-Hello */ = {
 			isa = PBXGroup;
 			children = (
+				1845A6A4259C7C12007989F9 /* B */,
+				1843B646258316D8000F68D1 /* SDK */,
+				1841BA1B2554189D0089EF5F /* Res */,
 				8EED62AA198A1D13000A4449 /* AppDelegate.h */,
 				8EED62AB198A1D13000A4449 /* AppDelegate.m */,
 				18D527F224F65A2600964739 /* GuideViewController.h */,
@@ -1060,7 +1105,11 @@
 		8EED62A2198A1D13000A4449 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1832908E250B17BE00FA14EA /* BIcon.png */,
+				188767232595EDBD0060C124 /* BBN.png */,
+				188767212595E7800060C124 /* BBS.png */,
+				1887671F2595E6380060C124 /* BBC@3x.png */,
+				1887671D2595D6050060C124 /* BBB.png */,
+				1843B64925848D77000F68D1 /* BusiIcon.png */,
 				4F6ABFDD2451A1DC00C40B5A /* dclogo@2x.png */,
 				4F6ABFDC2451A1DC00C40B5A /* dclogo@3x.png */,
 				4F4C65172465606B006A13AA /* Bundles */,
@@ -1143,24 +1192,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1887671E2595D6050060C124 /* BBB.png in Resources */,
 				18325BA724E6920A0072901C /* File in Resources */,
-				1832908F250B17BE00FA14EA /* BIcon.png in Resources */,
+				1841BA1D255418E80089EF5F /* direct_order.wav in Resources */,
 				18D527FB24F65A4B00964739 /* YYADViewController.xib in Resources */,
 				18D527F624F65A2600964739 /* GuideViewController.xib in Resources */,
 				4F4C65462465606C006A13AA /* PandoraApi.bundle in Resources */,
 				2F0BA3F9215B48A700F67004 /* Images.xcassets in Resources */,
 				4F4C65452465606C006A13AA /* TZImagePickerController.bundle in Resources */,
 				4F4C65512465606C006A13AA /* weex-polyfill.js in Resources */,
+				1845A6A8259C902E007989F9 /* user_order.wav in Resources */,
+				188767222595E7800060C124 /* BBS.png in Resources */,
 				4F4C654E2465606C006A13AA /* DCPGVideo.bundle in Resources */,
 				8EED62A6198A1D13000A4449 /* InfoPlist.strings in Resources */,
 				4F6ABFDE2451A1DC00C40B5A /* dclogo@3x.png in Resources */,
 				4F4C65502465606C006A13AA /* SVProgressHUD.bundle in Resources */,
 				6743942A23C98EB30085145E /* LaunchScreenAD.storyboard in Resources */,
+				188767242595EDBD0060C124 /* BBN.png in Resources */,
 				4F4C65372465606B006A13AA /* __uniappes6.js in Resources */,
 				2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */,
+				1845A6A6259C7C2F007989F9 /* AMap.bundle in Resources */,
 				4F6ABFDF2451A1DC00C40B5A /* dclogo@2x.png in Resources */,
+				188767202595E6380060C124 /* BBC@3x.png in Resources */,
 				67E9CDCF22968D2E0076E0FB /* Localizable.strings in Resources */,
 				67B7CAA221DCE8180083E96A /* control.xml in Resources */,
+				1843B64A25848D77000F68D1 /* BusiIcon.png in Resources */,
 				4F4C65522465606C006A13AA /* weexUniJs.js in Resources */,
 				4F4C65472465606C006A13AA /* unincomponents.ttf in Resources */,
 				8EED6590198A3DF7000A4449 /* Pandora in Resources */,
@@ -1293,13 +1349,14 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/../SDK/libs",
+					"$(PROJECT_DIR)/HBuilder-Hello/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HBuilder-Hello/HBuilder-Hello-Prefix.pch";
@@ -1320,7 +1377,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1354,13 +1411,14 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/../SDK/libs",
+					"$(PROJECT_DIR)/HBuilder-Hello/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HBuilder-Hello/HBuilder-Hello-Prefix.pch";
@@ -1381,7 +1439,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",

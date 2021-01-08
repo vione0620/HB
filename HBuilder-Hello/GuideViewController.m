@@ -9,6 +9,9 @@
 #import "GuideViewController.h"
 #import "AppDelegate.h"
 #import "Masonry.h"
+
+#import <CADisplay/CADisplay.h>
+
 static NSInteger guideCount = 1;
 @interface GuideViewController () <UIScrollViewDelegate>
 
@@ -18,6 +21,27 @@ static NSInteger guideCount = 1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [CACacheCustomADTool sharedInstanceWithRootName:@"ADFile"];
+    UIImage *image = nil;
+    NSString *imgStr = @"ad55.jpg";
+//    if (IS_IPHONE_X) {
+//        imgStr = @"adX.jpg";
+//    } else if (kiPhone6 ){
+//        imgStr = @"ad47.jpg";
+//    } else if (IS_IPHONE_Xs_Max ){
+//        imgStr = @"adxm.jpg";
+//    } else if (IS_IPHONE_Xr ){
+//        imgStr = @"adxr.jpg";
+//    }
+    if ([[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0]) {
+        image = [[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0];
+    } else {
+        image = [UIImage imageNamed:imgStr];
+    }
+
+    [self performSelector:@selector(intoMainPage) withObject:nil afterDelay:5];
+    
     // Do any additional setup after loading the view from its nib.
 //    [self.myScroll setPagingEnabled:YES];
 //        self.myScroll.showsVerticalScrollIndicator =NO;
@@ -79,8 +103,10 @@ static NSInteger guideCount = 1;
 //        //弹簧效果
 //        self.myScroll.bounces=NO;
     
-    CGFloat bottom = iPhoneX ? 0 : 10;
-    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(20, iPhoneXstatusBarHeight, SCREEN_WIDTH - 40, SCREEN_HEIGHT - iPhoneXBottomOffset - iPhoneXstatusBarHeight - bottom)];
+    
+    /**
+    CGFloat bottom = kIphoneX ? 0 : 10;
+    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(20, kStatusBar_Height, SCREEN_WIDTH - 40, SCREEN_HEIGHT - kBottomOffset - kStatusBar_Height - bottom)];
 
     bgView.layer.borderWidth = 1;
     bgView.layer.borderColor = RGBAColor(70, 184, 92, 1).CGColor;
@@ -88,13 +114,13 @@ static NSInteger guideCount = 1;
     imageIV.image = [UIImage imageNamed:@"welcom"];
     
     CGFloat top = imageIV.bounds.size.height;
-    top += iPhoneX ? 100 : 80;
+    top += kIphoneX ? 100 : 80;
     UILabel *label = [[UILabel alloc]init];
     label.text = @"欢迎来到早餐商户端";
     [label sizeToFit];
     label.center = CGPointMake(bgView.bounds.size.width / 2, top);
     
-    top += iPhoneX ? 70 : 50;
+    top += kIphoneX ? 70 : 50;
     UIView *btnBG = [[UIView alloc]initWithFrame:CGRectMake(20, top, SCREEN_WIDTH - 80, 50)];
     btnBG.backgroundColor = RGBAColor(70, 184, 92, 1);
     btnBG.layer.cornerRadius = 5;
@@ -112,6 +138,10 @@ static NSInteger guideCount = 1;
     [bgView addSubview:label];
     [bgView addSubview:btnBG];
     [btnBG addSubview:btn];
+    
+    */
+    
+    
 //    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.mas_equalTo(20);
 //    }];
@@ -136,6 +166,23 @@ static NSInteger guideCount = 1;
 //    }];
     
 }
+
+- (void)loadAdImage:(NSArray *)urlStrs urlstr:(NSString *)urlStr {
+    
+    if (urlStrs.count) {
+        if ([[CACacheCustomADTool sharedInstance] setImageUrlStr:urlStrs identity:urlStr]) {
+//            if ([[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0]) {
+//                image = [[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0];
+//            } else {
+//                image = [UIImage imageNamed:imgStr];
+//            }
+        }
+    } else {
+//        image = [UIImage imageNamed:imgStr];
+    }
+   
+}
+
 -(void)intoMainPage
 {
     AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
