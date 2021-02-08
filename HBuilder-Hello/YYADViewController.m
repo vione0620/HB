@@ -34,7 +34,9 @@
     // Do any additional setup after loading the view from its nib.
     
 }
-
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 - (void)setup {
     
     NSMutableArray *arr = [NSMutableArray array];
@@ -63,9 +65,10 @@
 //                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%d.jpg",i]];
 //                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"prepare"]];
                     
-                    imageV.animationDuration = 1.3;
-                    [imageV setAnimationImages:arr];
-                    [imageV startAnimating];
+//                    imageV.animationDuration = 1.3;
+//                    [imageV setAnimationImages:arr];
+//                    [imageV startAnimating];
+                    imageV.image=[UIImage imageNamed:[NSString stringWithFormat:@"newPre.jpg"]];
         //            if (i==imgCount) {
         //                [imageV setUserInteractionEnabled:YES];
         //                UIButton *btn=[UIButton buttonWithType:0];

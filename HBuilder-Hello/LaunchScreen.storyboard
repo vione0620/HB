@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBN.png" translatesAutoresizingMaskIntoConstraints="NO" id="chI-mp-JJn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchPP.png" translatesAutoresizingMaskIntoConstraints="NO" id="chI-mp-JJn">
                                 <rect key="frame" x="147" y="213" width="81" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="81" id="1H3-O0-44D"/>
@@ -32,7 +32,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="移移商家" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAp-n0-0hk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="移移优购" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAp-n0-0hk">
                                 <rect key="frame" x="0.0" y="314" width="375" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="uFn-lJ-cpp"/>
@@ -41,13 +41,21 @@
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-KY-9z0">
+                                <rect key="frame" x="161.5" y="343" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="chI-mp-JJn" firstAttribute="centerX" secondItem="z0m-pv-cfa" secondAttribute="centerX" id="42Z-Cr-3Xf"/>
                             <constraint firstItem="chI-mp-JJn" firstAttribute="centerY" secondItem="z0m-pv-cfa" secondAttribute="centerY" constant="-80" id="DNs-HI-OQF"/>
                             <constraint firstItem="lAp-n0-0hk" firstAttribute="leading" secondItem="z0m-pv-cfa" secondAttribute="leading" id="Dbn-k8-Zle"/>
+                            <constraint firstItem="dbd-KY-9z0" firstAttribute="top" secondItem="lAp-n0-0hk" secondAttribute="bottom" constant="5" id="Ddg-Ec-geX"/>
                             <constraint firstAttribute="trailing" secondItem="lAp-n0-0hk" secondAttribute="trailing" id="XC1-Es-H4H"/>
+                            <constraint firstItem="dbd-KY-9z0" firstAttribute="centerX" secondItem="z0m-pv-cfa" secondAttribute="centerX" id="cBn-WJ-znR"/>
                             <constraint firstItem="lAp-n0-0hk" firstAttribute="top" secondItem="chI-mp-JJn" secondAttribute="bottom" constant="20" id="xri-EJ-2Z7"/>
                         </constraints>
                     </view>
@@ -58,7 +66,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BBN.png" width="90" height="90"/>
+        <image name="LaunchPP.png" width="60" height="60"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

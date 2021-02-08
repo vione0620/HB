@@ -68,9 +68,13 @@
     }
     return UIInterfaceOrientationPortrait == interfaceOrientation;
 }
-
+static BOOL isF = NO;
 - (BOOL)prefersStatusBarHidden
 {
+    if (!isF) {
+        isF = YES;
+        return NO;
+    }
     return _isFullScreen;/*
                           NSString *model = [UIDevice currentDevice].model;
                           if (UIUserInterfaceIdiomPhone == UI_USER_INTERFACE_IDIOM()

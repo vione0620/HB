@@ -146,7 +146,7 @@
     [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 -(void)pushHomeViewController {
-   
+    [UIApplication sharedApplication].statusBarHidden = NO;
     self.window.rootViewController = self.rootViewController;
     [self checkUpdateVersion];
     

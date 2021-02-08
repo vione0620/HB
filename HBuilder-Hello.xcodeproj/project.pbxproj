@@ -31,10 +31,11 @@
 		184465A12552C2BD00C9CA88 /* libWXOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83E1CB50C4000C0F062 /* libWXOauth.a */; };
 		1845A6A6259C7C2F007989F9 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A5259C7C2F007989F9 /* AMap.bundle */; };
 		1845A6A8259C902E007989F9 /* user_order.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A7259C902E007989F9 /* user_order.wav */; };
+		187CF37825C2AF8A0070D5FF /* LaunchPP.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CF37725C2AF8A0070D5FF /* LaunchPP.png */; };
 		1887671E2595D6050060C124 /* BBB.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671D2595D6050060C124 /* BBB.png */; };
 		188767202595E6380060C124 /* BBC@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671F2595E6380060C124 /* BBC@3x.png */; };
 		188767222595E7800060C124 /* BBS.png in Resources */ = {isa = PBXBuildFile; fileRef = 188767212595E7800060C124 /* BBS.png */; };
-		188767242595EDBD0060C124 /* BBN.png in Resources */ = {isa = PBXBuildFile; fileRef = 188767232595EDBD0060C124 /* BBN.png */; };
+		18907A4125B6C61800161AF4 /* newPre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18907A4025B6C61700161AF4 /* newPre.jpg */; };
 		18D527F524F65A2600964739 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D527F324F65A2600964739 /* GuideViewController.m */; };
 		18D527F624F65A2600964739 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D527F424F65A2600964739 /* GuideViewController.xib */; };
 		18D527FA24F65A4B00964739 /* YYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D527F824F65A4B00964739 /* YYADViewController.m */; };
@@ -159,10 +160,11 @@
 		1843B64925848D77000F68D1 /* BusiIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BusiIcon.png; sourceTree = "<group>"; };
 		1845A6A5259C7C2F007989F9 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		1845A6A7259C902E007989F9 /* user_order.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = user_order.wav; sourceTree = "<group>"; };
+		187CF37725C2AF8A0070D5FF /* LaunchPP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPP.png; sourceTree = "<group>"; };
 		1887671D2595D6050060C124 /* BBB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBB.png; sourceTree = "<group>"; };
 		1887671F2595E6380060C124 /* BBC@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BBC@3x.png"; sourceTree = "<group>"; };
 		188767212595E7800060C124 /* BBS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBS.png; sourceTree = "<group>"; };
-		188767232595EDBD0060C124 /* BBN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBN.png; sourceTree = "<group>"; };
+		18907A4025B6C61700161AF4 /* newPre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newPre.jpg; sourceTree = "<group>"; };
 		18D527F224F65A2600964739 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		18D527F324F65A2600964739 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		18D527F424F65A2600964739 /* GuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
@@ -1105,7 +1107,8 @@
 		8EED62A2198A1D13000A4449 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				188767232595EDBD0060C124 /* BBN.png */,
+				187CF37725C2AF8A0070D5FF /* LaunchPP.png */,
+				18907A4025B6C61700161AF4 /* newPre.jpg */,
 				188767212595E7800060C124 /* BBS.png */,
 				1887671F2595E6380060C124 /* BBC@3x.png */,
 				1887671D2595D6050060C124 /* BBB.png */,
@@ -1194,6 +1197,7 @@
 			files = (
 				1887671E2595D6050060C124 /* BBB.png in Resources */,
 				18325BA724E6920A0072901C /* File in Resources */,
+				187CF37825C2AF8A0070D5FF /* LaunchPP.png in Resources */,
 				1841BA1D255418E80089EF5F /* direct_order.wav in Resources */,
 				18D527FB24F65A4B00964739 /* YYADViewController.xib in Resources */,
 				18D527F624F65A2600964739 /* GuideViewController.xib in Resources */,
@@ -1202,13 +1206,13 @@
 				4F4C65452465606C006A13AA /* TZImagePickerController.bundle in Resources */,
 				4F4C65512465606C006A13AA /* weex-polyfill.js in Resources */,
 				1845A6A8259C902E007989F9 /* user_order.wav in Resources */,
+				18907A4125B6C61800161AF4 /* newPre.jpg in Resources */,
 				188767222595E7800060C124 /* BBS.png in Resources */,
 				4F4C654E2465606C006A13AA /* DCPGVideo.bundle in Resources */,
 				8EED62A6198A1D13000A4449 /* InfoPlist.strings in Resources */,
 				4F6ABFDE2451A1DC00C40B5A /* dclogo@3x.png in Resources */,
 				4F4C65502465606C006A13AA /* SVProgressHUD.bundle in Resources */,
 				6743942A23C98EB30085145E /* LaunchScreenAD.storyboard in Resources */,
-				188767242595EDBD0060C124 /* BBN.png in Resources */,
 				4F4C65372465606B006A13AA /* __uniappes6.js in Resources */,
 				2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */,
 				1845A6A6259C7C2F007989F9 /* AMap.bundle in Resources */,
@@ -1349,7 +1353,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1377,7 +1381,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1411,7 +1415,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1439,7 +1443,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
