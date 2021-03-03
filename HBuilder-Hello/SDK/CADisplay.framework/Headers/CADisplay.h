@@ -20,17 +20,34 @@
 #import "CASPlayInfoManager.h"
 #import "CASPlayMapInfoManager.h"
 #import "CAEasyImageTool.h"
+#import "CASPlayVoiceManager.h"
+// 工具
+#import "CAEasyCalculateTool.h"
+
+// 需要的在页面单独导入
+#import "WKWebView+CAEasyJS.h"
 // ## UI类
 // 自动图片缓存，单例，有缓存可先从缓存获取显示
 #import "CACacheCustomADTool.h"
+//显示图片可放大缩小
+#import "CAEasyZoomPicturesView.h"
 // 简易toastView
 #import "CAToastActionView.h"
+// 文本
+#import "CAEasyTextTool.h"
 
 // 圆圈倒计时倒计时
 #import "CADisplayCountDownView.h"
 #import "CACountDownTool.h"
 #import "CACustomTimer.h"
-
+// tableView
+#import "UITableViewCell+CAEasyDisplay.h"
+// collectionView
+#import "CAEasyWaterfallLayout.h"
+#import "UICollectionView+CAEasyDisplay.h"
+// CALayer
+#import "CALayer+CAEasyDisplay.h"
+#import "CAAnimation+CAEasyDisplay.h"
 
 // 2个主题方式，推荐使用EasyDark
 // EasyDark简单手动赋值暗黑模式

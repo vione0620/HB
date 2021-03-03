@@ -16,6 +16,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CAToastActionView : UIView
+/// 自定义动画时长
+@property (nonatomic, assign) CGFloat duration;
+
 + (instancetype)share;
 - (void)ca_setIndicatorColor:(UIColor *)color;
 - (void)ca_setIndicatorAlpha:(CGFloat)alpha;

@@ -15,13 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  暂时只支持UIControlStateNormal状态下的图片设置
  */
-@property (nonatomic, copy) IBInspectable NSString *podImage;
-@property (nonatomic, copy) IBInspectable NSString *podHlImage;
-@property (nonatomic, copy) IBInspectable NSString *podSelImage;
-@property (nonatomic, copy) IBInspectable NSString *podDisImage;
-@property (nonatomic, copy) IBInspectable NSString *podBgImage;
-@property (nonatomic, copy) NSString *podModuleClassName;
-- (void)awakeFromNibAfterAspect;
+//@property (nonatomic, copy) IBInspectable NSString *podImage;
+//@property (nonatomic, copy) IBInspectable NSString *podHlImage;
+//@property (nonatomic, copy) IBInspectable NSString *podSelImage;
+//@property (nonatomic, copy) IBInspectable NSString *podDisImage;
+//@property (nonatomic, copy) IBInspectable NSString *podBgImage;
+//@property (nonatomic, copy) NSString *podModuleClassName;
+//- (void)awakeFromNibAfterAspect;
 
 @end
 

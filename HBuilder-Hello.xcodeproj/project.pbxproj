@@ -631,6 +631,7 @@
 		1843B646258316D8000F68D1 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				1845A6A5259C7C2F007989F9 /* AMap.bundle */,
 				1843B6472583174F000F68D1 /* CADisplay.framework */,
 			);
 			path = SDK;
@@ -639,7 +640,6 @@
 		1845A6A4259C7C12007989F9 /* B */ = {
 			isa = PBXGroup;
 			children = (
-				1845A6A5259C7C2F007989F9 /* AMap.bundle */,
 			);
 			path = B;
 			sourceTree = "<group>";
@@ -1353,7 +1353,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1381,7 +1381,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.5;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1415,7 +1415,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1443,7 +1443,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.5;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
