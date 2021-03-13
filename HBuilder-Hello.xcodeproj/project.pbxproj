@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181AF39A25F639430035FAA6 /* LaunchPre.png in Resources */ = {isa = PBXBuildFile; fileRef = 181AF39925F639430035FAA6 /* LaunchPre.png */; };
 		182B662524E52CDC00CCA1D0 /* GTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1967C0212536C300B330A9 /* GTSDK.framework */; };
 		182B662724E52DA400CCA1D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B662624E52DA400CCA1D0 /* libsqlite3.tbd */; };
 		182B662824E52EE800CCA1D0 /* liblibPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD8231CB50C4000C0F062 /* liblibPush.a */; };
@@ -31,7 +32,6 @@
 		184465A12552C2BD00C9CA88 /* libWXOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83E1CB50C4000C0F062 /* libWXOauth.a */; };
 		1845A6A6259C7C2F007989F9 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A5259C7C2F007989F9 /* AMap.bundle */; };
 		1845A6A8259C902E007989F9 /* user_order.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1845A6A7259C902E007989F9 /* user_order.wav */; };
-		187CF37825C2AF8A0070D5FF /* LaunchPP.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CF37725C2AF8A0070D5FF /* LaunchPP.png */; };
 		1887671E2595D6050060C124 /* BBB.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671D2595D6050060C124 /* BBB.png */; };
 		188767202595E6380060C124 /* BBC@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887671F2595E6380060C124 /* BBC@3x.png */; };
 		188767222595E7800060C124 /* BBS.png in Resources */ = {isa = PBXBuildFile; fileRef = 188767212595E7800060C124 /* BBS.png */; };
@@ -148,6 +148,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		181AF39925F639430035FAA6 /* LaunchPre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPre.png; sourceTree = "<group>"; };
 		182B662624E52DA400CCA1D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		182B662A24E52F3300CCA1D0 /* liblibNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNotification.a; path = ../SDK/Libs/liblibNotification.a; sourceTree = "<group>"; };
 		182B663124E5358B00CCA1D0 /* libAMapLocationPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMapLocationPlugin.a; path = ../SDK/Libs/libAMapLocationPlugin.a; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		1843B64925848D77000F68D1 /* BusiIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BusiIcon.png; sourceTree = "<group>"; };
 		1845A6A5259C7C2F007989F9 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		1845A6A7259C902E007989F9 /* user_order.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = user_order.wav; sourceTree = "<group>"; };
-		187CF37725C2AF8A0070D5FF /* LaunchPP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPP.png; sourceTree = "<group>"; };
 		1887671D2595D6050060C124 /* BBB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBB.png; sourceTree = "<group>"; };
 		1887671F2595E6380060C124 /* BBC@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BBC@3x.png"; sourceTree = "<group>"; };
 		188767212595E7800060C124 /* BBS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBS.png; sourceTree = "<group>"; };
@@ -1107,7 +1107,7 @@
 		8EED62A2198A1D13000A4449 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				187CF37725C2AF8A0070D5FF /* LaunchPP.png */,
+				181AF39925F639430035FAA6 /* LaunchPre.png */,
 				18907A4025B6C61700161AF4 /* newPre.jpg */,
 				188767212595E7800060C124 /* BBS.png */,
 				1887671F2595E6380060C124 /* BBC@3x.png */,
@@ -1195,9 +1195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181AF39A25F639430035FAA6 /* LaunchPre.png in Resources */,
 				1887671E2595D6050060C124 /* BBB.png in Resources */,
 				18325BA724E6920A0072901C /* File in Resources */,
-				187CF37825C2AF8A0070D5FF /* LaunchPP.png in Resources */,
 				1841BA1D255418E80089EF5F /* direct_order.wav in Resources */,
 				18D527FB24F65A4B00964739 /* YYADViewController.xib in Resources */,
 				18D527F624F65A2600964739 /* GuideViewController.xib in Resources */,
@@ -1353,7 +1353,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1381,7 +1381,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.3;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1415,7 +1415,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = ZXMK2V87C9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1443,7 +1443,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.3;
 				NEW_SETTING = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
