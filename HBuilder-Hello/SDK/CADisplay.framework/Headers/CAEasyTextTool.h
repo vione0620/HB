@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return 返回文字的高度
  */
 + (CGFloat)sizeLineFeedWithFont:(UIFont *)font textSizeWidth:(CGFloat)width text:(NSString *)text;
++ (CGFloat)sizeLineFeedWithFont:(UIFont *)font textSizeWidth:(CGFloat)width text:(NSString *)text lines:(NSInteger)lines;
 /**
  计算文字高度，允许换行计算
 

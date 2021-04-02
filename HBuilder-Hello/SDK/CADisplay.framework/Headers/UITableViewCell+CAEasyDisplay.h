@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  width 两边边距
  */
-- (void)shearTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath cornerRadius:(CGFloat)radius width:(CGFloat)width;
+- (void)shearTableView:(UITableView *)tableView IndexPath:(NSIndexPath *)indexPath cornerRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
 @end
 
 NS_ASSUME_NONNULL_END

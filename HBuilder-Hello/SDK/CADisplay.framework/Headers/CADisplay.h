@@ -35,11 +35,15 @@
 #import "CAToastActionView.h"
 // 文本
 #import "CAEasyTextTool.h"
+// 滑动
+#import "CATouchesManager.h"
 
 // 圆圈倒计时倒计时
 #import "CADisplayCountDownView.h"
 #import "CACountDownTool.h"
 #import "CACustomTimer.h"
+// scrollView
+#import "UIScrollView+CAEasyDisplay.h"
 // tableView
 #import "UITableViewCell+CAEasyDisplay.h"
 // collectionView

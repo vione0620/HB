@@ -12,17 +12,17 @@
 //IB_DESIGNABLE
 @interface UIView (CAMGNibLoading)
 
-//@property (nonatomic, assign) IBInspectable CGFloat wCornerRadius;
-//@property (nonatomic, assign) IBInspectable CGFloat wBorderWidth;
-//@property (nonatomic, assign) IBInspectable UIColor *wBorderColor;
-//@property (nonatomic, assign) IBInspectable CGFloat wDefineValue;
-//@property (nonatomic, assign) IBInspectable BOOL    wMasksToBounds;
-//
-///**
-// 根据当前类名的xib实例化UIView
-//
-// @return UIView
-// */
-//+ (id)loadNib;
+@property (nonatomic, assign) IBInspectable CGFloat loadCornerRadius;
+@property (nonatomic, assign) IBInspectable CGFloat loadBorderWidth;
+@property (nonatomic, assign) IBInspectable UIColor *loadBorderColor;
+@property (nonatomic, assign) IBInspectable CGFloat loadDefineValue;
+@property (nonatomic, assign) IBInspectable BOOL    loadMasksToBounds;
+
+/**
+ 根据当前类名的xib实例化UIView
+
+ @return UIView
+ */
++ (id)loadNib;
 
 @end

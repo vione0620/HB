@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (CAPodExtension)
 
-//@property (nonatomic, copy) IBInspectable NSString *podImage;
-//@property (nonatomic, copy) IBInspectable NSString *podHlImage;
-//@property (nonatomic, copy) NSString *podModuleClassName;
-//
-//- (void)awakeFromNibAfterAspect;
+@property (nonatomic, copy) IBInspectable NSString *loadImage;
+@property (nonatomic, copy) IBInspectable NSString *loadHlImage;
+@property (nonatomic, copy) NSString *loadModuleClassName;
+
+- (void)awakeFromNibAfterAspect;
 
 @end
 

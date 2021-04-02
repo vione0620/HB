@@ -16,10 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CAEasyZoomPicturesView : UIView
 @property (nonatomic, weak) id <CAEasyShowImageViewDelegate> delegate;
+@property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImage *image;
-
+@property (nonatomic)         UIViewContentMode smallContentMode;   
 @property (nonatomic, strong) UIView *sView;
 @property (nonatomic, assign) CGRect originRect;
+@property (nonatomic, copy) void (^animationDone)(void);
+@property (nonatomic, copy) void (^dismissDone)(void);
 ///默认YES
 @property (nonatomic, assign) BOOL canZoom;
 ///时长 默认0.5

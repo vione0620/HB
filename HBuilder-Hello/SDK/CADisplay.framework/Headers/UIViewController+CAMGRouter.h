@@ -9,24 +9,24 @@
 
 @interface UIViewController (CAMGRouter)
 
-///**
-// 获取当前最顶层的MGNavigationController
-//
-// @return UINavigationController
-// */
-//+ (UINavigationController *)currentNavigationController;
-//
-///**
-// 获取当前最顶层的MGNavigationController的最顶层的viewcontroller
-//
-// @return UIViewController
-// */
-//+ (UIViewController *)currentTopViewController;
-//
-///**
-// 从xib中创建ViewController
-// [self initWithNibName:NSStringFromClass(self.class) bundle:[NSBundle bundleForClass:self.class]];
-// */
-//- (instancetype)initWithXib;
+/**
+ 获取当前最顶层的MGNavigationController
+
+ @return UINavigationController
+ */
++ (UINavigationController *)currentNavigationController;
+
+/**
+ 获取当前最顶层的MGNavigationController的最顶层的viewcontroller
+
+ @return UIViewController
+ */
++ (UIViewController *)currentTopViewController;
+
+/**
+ 从xib中创建ViewController
+ [self initWithNibName:NSStringFromClass(self.class) bundle:[NSBundle bundleForClass:self.class]];
+ */
+- (instancetype)initWithXib;
 
 @end
