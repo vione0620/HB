@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "Masonry.h"
 
-#import <CADisplay/CADisplay.h>
+
 
 static NSInteger guideCount = 1;
 @interface GuideViewController () <UIScrollViewDelegate>
@@ -22,7 +22,7 @@ static NSInteger guideCount = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [CACacheCustomADTool sharedInstanceWithRootName:@"ADFile"];
+//    [CACacheCustomADTool sharedInstanceWithRootName:@"ADFile"];
     UIImage *image = nil;
     NSString *imgStr = @"ad55.jpg";
 //    if (IS_IPHONE_X) {
@@ -34,12 +34,12 @@ static NSInteger guideCount = 1;
 //    } else if (IS_IPHONE_Xr ){
 //        imgStr = @"adxr.jpg";
 //    }
-    if ([[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0]) {
-        image = [[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0];
-    } else {
-        image = [UIImage imageNamed:imgStr];
-    }
-
+//    if ([[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0]) {
+//        image = [[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0];
+//    } else {
+//        image = [UIImage imageNamed:imgStr];
+//    }
+    image = [UIImage imageNamed:imgStr];
     [self performSelector:@selector(intoMainPage) withObject:nil afterDelay:5];
     
     // Do any additional setup after loading the view from its nib.
@@ -170,13 +170,13 @@ static NSInteger guideCount = 1;
 - (void)loadAdImage:(NSArray *)urlStrs urlstr:(NSString *)urlStr {
     
     if (urlStrs.count) {
-        if ([[CACacheCustomADTool sharedInstance] setImageUrlStr:urlStrs identity:urlStr]) {
+//        if ([[CACacheCustomADTool sharedInstance] setImageUrlStr:urlStrs identity:urlStr]) {
 //            if ([[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0]) {
 //                image = [[CACacheCustomADTool sharedInstance] getCacheImageWithIndex:0];
 //            } else {
 //                image = [UIImage imageNamed:imgStr];
 //            }
-        }
+//        }
     } else {
 //        image = [UIImage imageNamed:imgStr];
     }

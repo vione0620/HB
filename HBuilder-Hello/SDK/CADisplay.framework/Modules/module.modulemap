@@ -1,6 +1,0 @@
-framework module CADisplay {
-  umbrella header "CADisplay.h"
-
-  export *
-  module * { export * }
-}
